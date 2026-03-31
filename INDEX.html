@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GitHub Profile Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>GitHub Profile Analyzer</h1>
+
+<button id="darkBtn">Toggle Dark Mode</button>
+
+<div class="search-box">
+
+<input type="text" id="username" placeholder="Enter GitHub Username">
+
+<button id="searchBtn">Search</button>
+
+</div>
+
+<div id="profile"></div>
+
+<h2>Developer Score</h2>
+<div id="score"></div>
+
+<h2>Contribution Graph</h2>
+<img id="contributionGraph">
+
+<h2>Language Usage</h2>
+<canvas id="chart"></canvas>
+
+<h2>Repositories</h2>
+
+<input type="text" id="repoSearch" placeholder="Search Repository">
+
+<div id="repos"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+
+<title>GitHub Profile Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>GitHub Profile Analyzer</h1>
+
+<div class="search">
+
+<input type="text" id="username" placeholder="Enter GitHub Username">
+
+<button onclick="getProfile()">Search</button>
+
+</div>
+
+<div id="profile"></div>
+<h2>Developer Score</h2>
+
+<div id="score"></div>
+
+<h2>Language Usage</h2>
+
+<canvas id="chart"></canvas>
+
+<input type="text" id="repoSearch" placeholder="Search Repository" onkeyup="filterRepos()">
+
+<script src="script.js"></script>
+<h2>Contribution Graph</h2>
+
+<img id="contributionGraph">
+
+</body>
+
+</html>
